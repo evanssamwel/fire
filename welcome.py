@@ -9,6 +9,7 @@ Branch: feature/hello-github
 import sys
 import time
 import random
+from datetime import date
 
 # ANSI color codes
 RESET = "\033[0m"
@@ -20,6 +21,12 @@ BRIGHT_YELLOW = "\033[93m"
 CYAN = "\033[96m"
 GREEN = "\033[92m"
 MAGENTA = "\033[95m"
+
+GENESIS_DATE = date(2018, 5, 17)
+
+def get_years_elapsed():
+    today = date.today()
+    return today.year - GENESIS_DATE.year - ((today.month, today.day) < (GENESIS_DATE.month, GENESIS_DATE.day))
 
 FIRE_ART = f"""
 {BRIGHT_RED}                 (        {RESET}
@@ -102,6 +109,18 @@ def interactive_mode():
     print(badge)
     print(f"{GREEN}Welcome to the world of open source, {name}! Never stop building.{RESET}\n")
 
+def get_message():
+    years = get_years_elapsed()
+    return f"""
+Over {years} years ago on May 17, 2018, this repository was created with
+a single line: '# fire'. No complex build systems, no large pipelines —
+just the pure curiosity of learning Git, making that first commit,
+and joining the global GitHub developer community.
+
+Every great engineering journey begins with a single commit.
+This is where the spark caught fire!
+"""
+
 def main():
     if "--interactive" in sys.argv or "-i" in sys.argv:
         interactive_mode()
@@ -117,15 +136,7 @@ def main():
 
     print(FIRE_ART)
     print(BANNER)
-    print("""
-Eight years ago, this repository was created with a single line: '# fire'.
-No complex build systems, no large pipelines — just the pure curiosity
-of learning Git, making that first commit, and joining the global GitHub
-developer community.
-
-Every great engineering journey begins with a single commit.
-This is where the spark caught fire!
-""".strip())
+    print(get_message().strip())
     print("\n" + "=" * 66)
     print(f"{BOLD}Feature branch enhancements available:{RESET}")
     print(f"  • Run with {CYAN}--interactive{RESET} to create your custom developer passport")
