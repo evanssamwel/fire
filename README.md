@@ -9,6 +9,7 @@
 ---
 
 [![Genesis Date](https://img.shields.io/badge/Genesis-May%2017%2C%202018-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/evanssamwel/fire)
+[![Journey Age](https://img.shields.io/date/1526547437?label=Journey%20Age&color=FF6F00&style=for-the-badge&logo=github)](https://github.com/evanssamwel/fire)
 [![Milestone](https://img.shields.io/badge/Milestone-Repository%20%231-E65100?style=for-the-badge&logo=git&logoColor=white)](https://github.com/evanssamwel/fire)
 [![Author](https://img.shields.io/badge/Author-Evans%20Samwel-007ACC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/evanssamwel)
 [![Branches](https://img.shields.io/badge/Branches-3%20Active-2E7D32?style=for-the-badge&logo=gitkraken&logoColor=white)](https://github.com/evanssamwel/fire/branches)
@@ -20,7 +21,7 @@
 
 ## 🌟 Welcome to GitHub! (The Origin Story)
 
-Eight years ago on **May 17, 2018**, I created this repository. 
+On **May 17, 2018**, I created this repository as my very first step into the open-source world. 
 
 I was testing GitHub for the very first time, figuring out what version control was, how commits worked, and exploring how developers worldwide collaborate on open-source code. Back then, this repository was born with just a single headline:
 
@@ -120,9 +121,9 @@ git pull origin <branch-name>        # Fetch & integrate upstream changes
 
 ---
 
-## ⏳ Then vs. Now (2018 ➔ Today)
+## ⏳ Then vs. Now (Genesis ➔ Present Day)
 
-| Milestone | May 2018 | Today |
+| Milestone | May 17, 2018 (Genesis) | Present Day |
 |---|---|---|
 | **First Git Command** | `git init` & wondering what `.git` is | Complete command over branching, rebasing, and CI/CD |
 | **First Commit** | `# fire` | Clean commit messages, PRs, and semantic versioning |
