@@ -47,17 +47,18 @@ As part of polishing my repositories, this project stands as a tribute to humble
 To showcase how a developer progresses from a single-commit repo to understanding industry-standard workflows, this repository is organized into **three classic branches**:
 
 ```mermaid
+%%{init: { 'gitGraph': {'mainBranchName': 'master'}} }%%
 gitGraph
    commit id: "Initial commit (2018)"
    commit id: "docs: commemorative README"
    branch develop
    checkout develop
    commit id: "chore: init develop branch"
-   branch feature/hello-github
-   checkout feature/hello-github
+   branch "feature/hello-github"
+   checkout "feature/hello-github"
    commit id: "feat: interactive greeting"
    checkout develop
-   merge feature/hello-github
+   merge "feature/hello-github"
    checkout master
    merge develop tag: "v1.0.0"
 ```
